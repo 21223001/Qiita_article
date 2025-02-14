@@ -1,0 +1,99 @@
+Vue.js × Typescript の開発環境構築及び実践
+
+
+Powershellで実行した
+また，VScodeが利用できる事が望ましい
+
+Vue CLIのインストール
+
+
+npm install -g @vue/cli
+vue --version
+
+
+ここで，作業ディレクトリに移動
+
+// typescriptを有効にする
+vue create my-vue-app --default --packageManager npm
+
+// 代わりに，以下の方法で，手動で設定も可能
+vue create my-vue-app
+
+Vue.jsを起動
+
+
+npm run serve(作業ディレクトリを確認する事)
+
+ App running at:
+  - Local:   http://localhost:8080/
+
+上記にchromeでアクセスする
+また，powershellを閉じると，サーバーは終了する(powershellのプロセスとして動いている)．
+したがって，追加でpowershellのタブを開く．
+再度，作業ディレクトリまで移動する事を忘れないように
+
+備考
+このサイトには，同一のネットワークを利用している人ならアクセスが可能となる．
+
+
+
+続いて，Typescriptを利用する際のHTMLのひな型を作成
+```
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue + TypeScript</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{ message }}</p>
+        <button @click="changeMessage">メッセージを変更</button>
+    </div>
+
+    <script type="module" src="./app.ts"></script>
+</body>
+</html>
+```
+
+
+呼び出されるapp.tsも作成
+```
+import { createApp, ref } from "vue";
+
+const App = {
+    setup() {
+        const message = ref("Hello, Vue + TypeScript!");
+
+        const changeMessage = () => {
+            message.value = "メッセージが変更されました!";
+        };
+
+        return { message, changeMessage };
+    },
+};
+
+createApp(App).mount("#app");
+```
+
+index.html
+
+app.ts は.tsより，typescriptで記述がされている．よってコンパイラが必要
+typescriptのインストール
+
+npm install -g typescript
+tsc --init
+tsc app.ts
+
+
+
+
+
+ローカルサーバーの終了方法について
+powershellを閉じるだけでもサーバーは停止する
+しかし，より安全な方法として，　Ctrl + C を用いる事．
+
+
+
