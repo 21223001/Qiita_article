@@ -45,8 +45,8 @@ VTK-m: GPUなどの並列環境に特化したVTKの派生プロジェクト．�
 
 
 #### 参考文献
-1. VTK Official Website: [https://vtk.org/](https://vtk.org/)  
-2. Will Schroeder, Ken Martin, Bill Lorensen: “The Visualization Toolkit” (Kitware)  
-3. VTK Documentation: [https://docs.vtk.org/](https://docs.vtk.org/)  
-4. Kitware GitLab  VTK Repository: [https://gitlab.kitware.com/vtk/vtk](https://gitlab.kitware.com/vtk/vtk)  
-5. The ITK Community: [https://itk.org/](https://itk.org/) (画像処理ライブラリとの比較材料)
+VTK Official Website (https://vtk.org/) (最終閲覧日：2025年2月15日)
+Will Schroeder, Ken Martin, Bill Lorensen: “The Visualization Toolkit” (Kitware) (最終閲覧日：2025年2月15日)
+VTK Documentation (https://docs.vtk.org/) (最終閲覧日：2025年2月15日)
+Kitware GitLab VTK Repository (https://gitlab.kitware.com/vtk/vtk) (最終閲覧日：2025年2月15日)
+The ITK Community (https://itk.org/) (最終閲覧日：2025年2月15日)

@@ -139,10 +139,10 @@ QUICはポート番号を使用するが，セッション管理の方式がTCP�
 
 
 ### 参考文献
-- RFC 793 - Transmission Control Protocol (TCP)
-- RFC 768 - User Datagram Protocol (UDP)
-- RFC 8200 - Internet Protocol, Version 6 (IPv6)
-- "Computer Networking: Principles, Protocols and Practice" by Olivier Bonaventure
-- "TCP/IP Illustrated, Volume 1" by W. Richard Stevens
-- "The Linux Programming Interface" by Michael Kerrisk
+RFC 793 - Transmission Control Protocol (TCP) (https://tools.ietf.org/html/rfc793) (最終閲覧日：2025年2月15日)
+RFC 768 - User Datagram Protocol (UDP) (https://tools.ietf.org/html/rfc768) (最終閲覧日：2025年2月15日)
+RFC 8200 - Internet Protocol, Version 6 (IPv6) (https://tools.ietf.org/html/rfc8200) (最終閲覧日：2025年2月15日)
+Computer Networking: Principles, Protocols and Practice by Olivier Bonaventure (最終閲覧日：2025年2月15日)
+TCP/IP Illustrated, Volume 1 by W. Richard Stevens (最終閲覧日：2025年2月15日)
+The Linux Programming Interface by Michael Kerrisk (最終閲覧日：2025年2月15日)
 
