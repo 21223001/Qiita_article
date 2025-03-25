@@ -57,9 +57,11 @@ git branch -d old-branch
 #### ブランチの削除（強制削除）
 ```bash
 git branch -D old-branch
+
+# Deleted branch old-branch (was 7271d6d).
 ```
 
-．
+
 
 
 
@@ -73,12 +75,16 @@ git branch -D old-branch
 #### ブランチの切り替え
 ```bash
 git checkout main
-git checkout otherBranch
+
+# Switched to branch 'main'
+# Your branch is up to date with 'origin/main'.
 ```
 
 #### 新規ブランチの作成，及び，切り替え
 ```bash
 git checkout -b newBranchName
+
+# Switched to a new branch 'newBranchName'
 ```
 
 #### ファイルを元の状態に戻す（HEADや他のブランチ、コミットから復元）
@@ -89,15 +95,41 @@ git checkout main -- index.html         # 他のブランチのファイルを�
 ```
 
 #### 一時的に過去のコミットに移動（detached HEAD）
+この状態ではブランチにいない為，新規コミットをしてもブランチには記録されない．
+
 ```bash
 git checkout abc1234
 ```
-この状態ではブランチにいないため、新しいコミットをしてもブランチには記録されません。
 
 
 
 
+## `git switch` について
 
+`git switch` はブランチの切り替え専用である．
+比較的新しいコマンドであり，`checkout` よりも安全に利用できるようになった．
+
+
+
+
+#### 既存ブランチへの切り替え
+```bash
+git switch main
+
+# Switched to branch 'main'
+```
+
+#### 新しいブランチの作成，及び，切り替え
+```bash
+git switch -c new_branch
+
+# Switched to a new branch 'new_branch'
+```
+
+#### リモートブランチをローカルに作成して切り替える
+```bash
+git switch -c feature-x origin/feature-x
+```
 
 
 
@@ -148,5 +180,16 @@ git checkout abc1234
 
 
 
+
+
+以下が「`git switch` の項」の**追記分のみ**です。
+
+---
+
+
+
+#### よくあるエラー例とヒント
+`git switch` は安全性を重視しているため，ブランチが存在しない場合や既に存在する名前で新規作成しようとした場合などに明確なエラーが出る．  
+これは，無意識な操作ミスを防ぐための設計になっている．
 
 
