@@ -8,6 +8,9 @@
 
 ## 予想される読み手
 
+ - 現在，PowerShell 5 を利用している
+ - Windows以外でも PowerShell を利用したい
+ - 今後 PowerShell 7 を利用する
 
 
 
