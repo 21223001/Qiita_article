@@ -1,4 +1,15 @@
-# PowerShell 7 の特徴
+
+
+## In a nutshell
+
+
+## はじめに
+
+
+## 予想される読み手
+
+
+
 
 ## PowerShell 5 系との違い
 
@@ -10,32 +21,32 @@
 
 ### OS による違い
 
-- **Windows**
+- Windows
   - PowerShell 5 は OS に標準搭載されているが，PowerShell 7 は手動でインストールが必要．
   - `Windows Forms` や `WPF` との互換性が低い(ただし `.NET Core` の制限による)．
   - `Get-WindowsFeature` などの一部コマンドは利用不可．
 
-- **Linux / macOS**
+- Linux / macOS
   - PowerShell 7 は公式にサポートされており，`apt`, `yum`, `brew` などでインストール可能．
   - Linux の標準的な Bash コマンド (`ls`, `cat`, `grep` など) が使用可能．
   - `pwsh` コマンドとして起動する．
 
 ### 新機能
 
-- **パイプライン並列処理**
+- パイプライン並列処理
   ```powershell
   1..10 | ForEach-Object -Parallel { $_ * 2 }
   ```
-- **新しい演算子**
-  - `??`(Null 合体演算子)：`$value = $null ?? 'default'`
-  - `??=`(Null 合体代入演算子)：`$value ??= 'default'`
+- 新しい演算子
+  - `??`(Null 合体演算子):`$value = $null ?? 'default'`
+  - `??=`(Null 合体代入演算子):`$value ??= 'default'`
   - `-match`, `-notmatch` で `case-insensitive` のデフォルト変更
-- **簡略化されたエラーハンドリング**
+- 簡略化されたエラーハンドリング
   - `Try { } Catch { }` のエラーメッセージが改善．
   - `$?` 変数がエラーの発生をより詳細に報告．
-- **`Get-Error` コマンド**
+- `Get-Error` コマンド
   - 詳細なエラーメッセージの取得が可能．
-- **`ConvertTo-Json` の改良**
+- `ConvertTo-Json` の改良
   - 深いネストのオブジェクトを正しく変換可能．
 
 ### PowerShell 5 との互換性
@@ -49,15 +60,15 @@
 
 ### コマンドの違いや特徴
 
-- **変更点**
+- 変更点
   - `Get-Command -Syntax` の出力が改善され，関数のシグネチャが見やすくなった．
   - `Select-String` で複数行マッチが可能．
   - `Out-GridView` が macOS / Linux で利用不可．
 
-- **新コマンド**
-  - `Get-Error`：直前のエラーを詳細に取得．
-  - `Test-Connection`：簡単な ping コマンドとして利用可能．
-  - `New-TemporaryFile`：一時ファイルを作成する新機能．
+- 新コマンド
+  - `Get-Error`:直前のエラーを詳細に取得．
+  - `Test-Connection`:簡単な ping コマンドとして利用可能．
+  - `New-TemporaryFile`:一時ファイルを作成する新機能．
 
 
 
@@ -80,7 +91,7 @@
 
 ## PowerShell 7 の導入方法について
 
-PowerShell 7(PowerShell Core)のインストール方法や，初期設定，注意点については以下の記事で詳しくまとめています．
+PowerShell 7(PowerShell Core)のインストール方法等は以下に纏めた．
 
 [[PowerShellCore] 新機能と改善のために最新の PowerShell を...](https://qiita.com/molecular_pool/items/6287d89d65cf342f8991)
 
