@@ -16,6 +16,7 @@ Visual Studio Code(VSCode)では，毎回同じファイルを手動で開くの
 
 
 
+## 予想される読み手
 
 
 
