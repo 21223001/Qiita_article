@@ -89,6 +89,16 @@ wpr -stop MyTrace.etl
 
 
 
+PS C:\Users\mosuk\Downloads\cv2pdb-0.53> .\cv2pdb.exe
+Convert DMD CodeView/DWARF debug information to PDB files, Version 0.53
+Copyright (c) 2009-2012 by Rainer Schuetze, All Rights Reserved
+
+License for redistribution is given by the Artistic License 2.0
+see file LICENSE for further details
+
+usage: C:\Users\mosuk\Downloads\cv2pdb-0.53\cv2pdb.exe [-D<version>|-C|-n|-e|-s<C>|-p<embedded-pdb>] <exe-file> [new-exe-file] [pdb-file]
+PS C:\Users\mosuk\Downloads\cv2pdb-0.53>
+
 
 
 
